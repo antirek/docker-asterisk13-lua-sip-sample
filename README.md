@@ -1,6 +1,6 @@
-# docker-astolua-sample
+# asterisk13-lua-sample
 
-Sample of extend docker image antirek/astolua [https://hub.docker.com/r/antirek/astolua/]
+Sample of extend docker image antirek/asterisk13-lua [https://hub.docker.com/r/antirek/asterisk13-lua/]
 
 see Dockerfile
 
@@ -17,9 +17,9 @@ see Dockerfile
 
 ## Fast start
 
-> git clone https://github.com/antirek/docker-astolua-sample.git
+> git clone https://github.com/antirek/docker-asterisk13-lua-sample.git
 
-> cd docker-astolua-sample
+> cd docker-asterisk13-lua-sample
 
 > ./build
 

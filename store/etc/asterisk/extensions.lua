@@ -1,7 +1,7 @@
 
 local dial = function (context, extension)
     app.noop("context: " .. context .. ", extension: " .. extension);
-    app.dial('SIP/' .. extension, 10);
+    app.dial('PJSIP/' .. extension, 10);
     
     local dialstatus = channel["DIALSTATUS"]:get();
     app.noop('dialstatus: '..dialstatus);
@@ -41,6 +41,12 @@ extensions = {
         ["200"] = ivr;
 
         ["_NXXXXXX"] = outgoing_route_function;
+
+        ["h"] = function()
+            local dialstatus = channel["DIALSTATUS"]:get();
+            app.noop('DIALSTATUS: '..tostring(dialstatus));
+            app.noop('hangup!')
+        end;
     };
 };
 
