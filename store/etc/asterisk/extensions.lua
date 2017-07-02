@@ -40,7 +40,9 @@ extensions = {
 
         ["200"] = ivr;
 
-        ["_NXXXXXX"] = outgoing_route_function;
+        ["_XXXXXXXXXXX"] = function(context, extension)
+            app.dial('PJSIP/'..extension..'@sipnet.ru');
+        end;
 
         ["h"] = function()
             local dialstatus = channel["DIALSTATUS"]:get();
