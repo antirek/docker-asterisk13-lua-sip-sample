@@ -1,1 +1,1 @@
-docker build --no-cache -t "asterisk13-lua-sample" .
+docker build --no-cache -t "asterisk13-lua-sip-sample" .

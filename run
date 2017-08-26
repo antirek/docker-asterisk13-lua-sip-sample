@@ -7,4 +7,4 @@ docker run \
  -v $(pwd)/store/var/menu:/var/menu/ \
  --net=host \
  --rm \
- -i -t "asterisk13-lua-sample"
+ -i -t "asterisk13-lua-sip-sample"
